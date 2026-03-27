@@ -50,14 +50,25 @@
       <div class="about__grid">
         <div class="about__text">
           <p>
-            I'm a software engineer with a passion for backend engineering, system design, and AI orchestration.
-            Every project is a learning opportunity — I care deeply about writing code that is correct, maintainable,
-            and built with intention.
+            Backend engineer with five years in distributed systems, cloud infrastructure, and data pipelines. Currently at J.P. Morgan Chase.
           </p>
-          <p>
-            When I'm not building systems, I'm studying how they scale, fail, and evolve. I enjoy the intersection
-            of engineering rigour and product thinking.
-          </p>
+          <div class="about__more" id="aboutMore">
+            <p>
+              Some things I have shipped: a cloud migration that cut report availability from 5 hours to 20 minutes, Kubernetes and Terraform infrastructure that reduced compute costs by 30–40%, and a UAT automation tool that took testing from a week to 3 hours. Most recently, I wired agentic AI into production REST endpoints so engineers could query codebases in natural language — that is live and cut developer toil by 40%.
+            </p>
+            <p>
+              I am now building on the AI side independently. Two projects in progress: one uses computer vision to analyze floor plans, another is an agentic outfit stylist. I write about what I learn at <a href="https://imshruti.substack.com" target="_blank" rel="noopener">imshruti.substack.com</a>.
+            </p>
+            <p>
+              Outside of work: training my dog Nya toward public access standards, and slowly convincing myself I understand transformer attention.
+            </p>
+          </div>
+          <button class="about__toggle" id="aboutToggle" onclick="
+            const m = document.getElementById('aboutMore');
+            const b = document.getElementById('aboutToggle');
+            const expanded = m.classList.toggle('about__more--open');
+            b.textContent = expanded ? 'Read less ↑' : 'Read more ↓';
+          ">Read more ↓</button>
         </div>
         <div class="about__facts">
           <div class="fact">
