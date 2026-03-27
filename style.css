@@ -530,9 +530,8 @@ ul {
 /* ── Writing ─────────────────────────────────────────────────── */
 .writing__grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1.5rem;
-  max-width: 560px;
 }
 
 .writing-card {
@@ -564,6 +563,10 @@ ul {
   text-transform: uppercase;
   color: var(--color-accent);
   font-weight: 500;
+}
+
+.writing-card__type--linkedin {
+  color: #0A66C2;
 }
 
 .writing-card__arrow {
