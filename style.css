@@ -558,6 +558,22 @@ ul {
 }
 
 /* ── Writing ─────────────────────────────────────────────────── */
+.writing__footer {
+  margin-top: 1.5rem;
+  text-align: right;
+}
+
+.writing__more {
+  font-size: 0.88rem;
+  color: var(--color-accent);
+  transition: opacity var(--transition);
+  white-space: nowrap;
+}
+
+.writing__more:hover {
+  opacity: 0.75;
+}
+
 .writing__grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
